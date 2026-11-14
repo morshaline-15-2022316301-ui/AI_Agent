@@ -1,0 +1,102 @@
+meta: {'model': 'qwen2.5:3b', 'system_prompt': 'You are a helpful assistant. Keep your answers short.', 'temperature': 0, 'seed': 42, 'max_tokens': 256, 'baseline_input_tokens_tiny_prompt': 25, 'template_overhead_tokens': 24}
+# 1 english in=  31 out=   9 0.4s
+# 1 bangla  in=  48 out=  34 1.0s
+# 2 english in=  32 out=  30 1.0s
+# 2 bangla  in=  67 out= 163 4.2s
+# 3 english in=  34 out=   5 0.3s
+# 3 bangla  in=  63 out=  31 0.9s
+# 4 english in=  41 out=  22 0.8s
+# 4 bangla  in=  82 out=  78 2.1s
+# 5 english in=  32 out=   3 0.2s
+# 5 bangla  in=  60 out= 204 5.2s
+# 6 english in=  32 out=   4 0.2s
+# 6 bangla  in=  52 out=  32 1.0s
+# 7 english in=  32 out=   5 0.2s
+# 7 bangla  in=  61 out=  42 1.2s
+# 8 english in=  32 out=  40 1.3s
+# 8 bangla  in=  60 out=  74 2.0s
+# 9 english in=  30 out=  38 1.2s
+# 9 bangla  in=  46 out= 109 2.9s
+#10 english in=  32 out=  12 0.4s
+#10 bangla  in=  51 out=  32 1.0s
+#11 english in=  33 out=  27 0.8s
+#11 bangla  in=  53 out=  26 0.8s
+#12 english in=  34 out=   5 0.3s
+#12 bangla  in=  63 out=  52 1.4s
+#13 english in=  32 out=  26 0.9s
+#13 bangla  in=  61 out= 256 6.4s TRUNCATED
+#14 english in=  31 out=  25 0.9s
+#14 bangla  in=  69 out= 233 6.1s
+#15 english in=  34 out=  32 1.0s
+#15 bangla  in=  69 out= 256 7.7s TRUNCATED
+#16 english in=  34 out= 111 3.9s
+#16 bangla  in=  76 out=  80 2.2s
+#17 english in=  32 out=  23 0.7s
+#17 bangla  in=  68 out=  74 2.2s
+#18 english in=  33 out=  12 0.5s
+#18 bangla  in=  65 out=   4 0.3s
+#19 english in=  34 out=   4 0.2s
+#19 bangla  in=  79 out= 256 6.8s TRUNCATED
+#20 english in=  36 out=   9 0.4s
+#20 bangla  in=  94 out=  13 0.6s
+#21 english in=  32 out=  20 0.7s
+#21 bangla  in=  67 out=  88 2.4s
+#22 english in=  33 out=  12 0.5s
+#22 bangla  in=  75 out= 256 6.5s TRUNCATED
+#23 english in=  34 out=  28 0.8s
+#23 bangla  in=  73 out= 256 6.5s TRUNCATED
+#24 english in=  32 out=  46 1.2s
+#24 bangla  in=  65 out= 140 3.6s
+#25 english in=  35 out=  36 1.0s
+#25 bangla  in=  80 out= 256 6.6s TRUNCATED
+#26 english in=  33 out=  30 0.9s
+#26 bangla  in=  66 out=  38 1.2s
+#27 english in=  35 out=  38 1.1s
+#27 bangla  in=  75 out= 110 2.9s
+#28 english in=  31 out= 199 6.2s
+#28 bangla  in=  62 out= 256 6.5s TRUNCATED
+#29 english in=  32 out=  40 1.1s
+#29 bangla  in=  61 out=  68 1.8s
+#30 english in=  34 out=  33 1.0s
+#30 bangla  in=  88 out= 256 6.9s TRUNCATED
+#31 english in=  34 out=   3 0.2s
+#31 bangla  in=  56 out=  76 2.0s
+#32 english in=  36 out=   3 0.2s
+#32 bangla  in=  58 out=  21 0.7s
+#33 english in=  34 out=   4 0.3s
+#33 bangla  in=  57 out=  34 1.0s
+#34 english in=  42 out=   6 0.3s
+#34 bangla  in=  68 out=  51 1.5s
+#35 english in=  36 out=   3 0.2s
+#35 bangla  in=  43 out=   3 0.2s
+#36 english in=  45 out=  15 0.5s
+#36 bangla  in= 100 out=  79 2.2s
+#37 english in=  33 out=   4 0.3s
+#37 bangla  in=  38 out=  21 0.7s
+#38 english in=  47 out=  12 0.5s
+#38 bangla  in=  92 out=  23 1.7s
+#39 english in=  55 out=  12 0.5s
+#39 bangla  in= 147 out=  61 1.9s
+#40 english in=  52 out=  15 0.5s
+#40 bangla  in= 159 out=   2 1.4s
+#41 english in=  59 out=  29 0.9s
+#41 bangla  in= 172 out= 103 3.0s
+#42 english in=  51 out=  16 0.6s
+#42 bangla  in= 152 out= 128 3.7s
+#43 english in=  54 out=  11 0.5s
+#43 bangla  in= 170 out=  67 2.1s
+#44 english in=  56 out=  30 1.0s
+#44 bangla  in= 176 out= 141 4.1s
+#45 english in=  76 out= 129 3.5s
+#45 bangla  in= 320 out= 256 7.5s TRUNCATED
+#46 english in=  74 out=  86 2.4s
+#46 bangla  in= 283 out= 256 7.0s TRUNCATED
+#47 english in=  71 out= 256 6.6s TRUNCATED
+#47 bangla  in= 263 out= 256 7.1s TRUNCATED
+#48 english in=  72 out=  49 1.4s
+#48 bangla  in= 272 out= 256 6.9s TRUNCATED
+#49 english in=  81 out=  76 2.1s
+#49 bangla  in= 248 out= 112 3.3s
+#50 english in=  66 out=  45 1.3s
+#50 bangla  in= 210 out=  89 2.7s
+wrote 100 rows to /Users/morshalinemojumder/Desktop/Elective/Assignment_2/results/results.csv

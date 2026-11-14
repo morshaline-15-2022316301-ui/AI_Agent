@@ -1,0 +1,248 @@
+﻿id,language,prompt,output,input_tokens,output_tokens,cost_usd,latency_s,category,net_input_tokens,truncated,retries
+1,english,What is the capital of Bangladesh?,The capital of Bangladesh is Dhaka.,31,9,0.00001005,0.37,question,7,False,0
+1,bangla,বাংলাদেশের রাজধানী কী?,বাংলাদেশের রাজধানী হল আগ্রা (Dhaka).,48,34,0.00002760,1.0,question,24,False,0
+2,english,Who wrote the national anthem of Bangladesh?,"The national anthem of Bangladesh, ""Amar Sonar Bangla"" (My Golden Bengal), was written by Rabindranath Tagore.",32,30,0.00002280,0.951,question,8,False,0
+2,bangla,বাংলাদেশের জাতীয় সংগীত কে রচনা করেছেন?,বাংলাদেশের জাতীয় সংগীত রচনা করেছিলেন মুহম্মদুর আল ইসকালি (Muhammadu'r-Ilahi Iskali)। এই জাতীয় সংগীতটি বাংলাদেশের প্রথম জাতীয় শিল্পী সঙ্গীতকারদের মধ্যে একজন ছিল।,67,163,0.00010785,4.205,question,43,False,0
+3,english,How many days are there in a leap year?,366 days,34,5,0.00000810,0.308,question,10,False,0
+3,bangla,একটি লিপ ইয়ারে (অধিবর্ষে) কত দিন থাকে?,একটি লিপ ইয়ারে 366 দিন থাকে।,63,31,0.00002805,0.924,question,39,False,0
+4,english,"What is the name of the longest sea beach in the world, located in Bangladesh?","The name of the longest sea beach in the world is Cox's Bazar Beach, located in Bangladesh.",41,22,0.00001935,0.821,question,17,False,0
+4,bangla,বাংলাদেশে অবস্থিত বিশ্বের দীর্ঘতম সমুদ্রসৈকতের নাম কী?,বিশ্বের দীর্ঘতম সমুদ্রসোন্ধের নাম বাংলাদেশের জলবাহাদুর কৃষ্ণপূর (Kholapukir)।,82,78,0.00005910,2.147,question,58,False,0
+5,english,Which planet is closest to the Sun?,Mercury,32,3,0.00000660,0.182,question,8,False,0
+5,bangla,সূর্যের সবচেয়ে কাছের গ্রহ কোনটি?,"সূর্যের সবচেয়ে কাছের গ্রহ হল ভিতর্বিশ্রুত জগৎ (Inferior Planets) এর মধ্যে প্রাচীন সূর্য (Pallas), অথবা ডেভিড হার্টলি নামক একটি গ্রহ। কিছু বছর পরে ভিতর্বিশ্রুত জগৎসমূহ (এইচ, ও, আ) হলেন সূর্যের সবচেয়ে কাছের গ্রহ।",60,204,0.00013140,5.212,question,36,False,0
+6,english,What is the chemical formula of water?,H₂O,32,4,0.00000720,0.209,question,8,False,0
+6,bangla,পানির রাসায়নিক সংকেত কী?,পানির রাসায়নিক সংকেত হল NH4NO3।,52,32,0.00002700,0.962,question,28,False,0
+7,english,In which year did Bangladesh become independent?,1971,32,5,0.00000780,0.223,question,8,False,0
+7,bangla,বাংলাদেশ কোন সালে স্বাধীন হয়েছিল?,বাংলাদেশ ১৯৭৫ সালে স্বাধীন হয়েছিল।,61,42,0.00003435,1.18,question,37,False,0
+8,english,What do plants need to make food?,"Plants primarily make their own food through the process of photosynthesis, which requires sunlight, water, and carbon dioxide. They also need nutrients like nitrogen, phosphorus, and potassium from soil.",32,40,0.00002880,1.303,question,8,False,0
+8,bangla,গাছের খাবার তৈরি করতে কী কী লাগে?,"গাছের খাবার তৈরি করা হয় প্যানেল, টিমস এবং অন্যান্য সহযোগিতাদের সাথে।",60,74,0.00005340,1.999,question,36,False,0
+9,english,Why is the sky blue?,"The sky appears blue because of the way Earth's atmosphere scatters sunlight. Blue light is scattered more than other colors due to its shorter wavelength, making it appear dominant in our view.",30,38,0.00002730,1.219,question,6,False,0
+9,bangla,আকাশ নীল দেখায় কেন?,"আকাশ নীল প্রাচীরণ হয় কারণ আকাশের বহুগু众体の光が混ざり合って、空はさまざまな色合いを表すことができます。特に晴れた日には, 특히 하늘의 빨간색과 파란색이 많이 보입니다. 이는 태양광에 대한 반사와 투명도 때문입니다.",46,109,0.00007230,2.901,question,22,False,0
+10,english,What is the national fruit of Bangladesh?,The national fruit of Bangladesh is Mango (Banana).,32,12,0.00001200,0.443,question,8,False,0
+10,bangla,বাংলাদেশের জাতীয় ফল কী?,বাংলাদেশের জাতীয় ফল হল বিলা।,51,32,0.00002685,0.986,question,27,False,0
+11,english,How many continents are there in the world?,"There are 7 continents in the world: Africa, Antarctica, Asia, Australia, Europe, North America, and South America.",33,27,0.00002115,0.824,question,9,False,0
+11,bangla,পৃথিবীতে কয়টি মহাদেশ আছে?,পৃথিবৈতে 8 মহাদেশ থাকে।,53,26,0.00002355,0.827,question,29,False,0
+12,english,What is the boiling point of water in Celsius?,100°C,34,5,0.00000810,0.304,question,10,False,0
+12,bangla,সেলসিয়াস স্কেলে পানির স্ফুটনাঙ্ক কত?,পানির স্ফুটনাঙ্ক (boiling point) সেলসিয়াস স্কেলে 100°C হয়।,63,52,0.00004065,1.419,question,39,False,0
+13,english,Write a short poem about the rain.,"Raindrops kiss the earth,
+A symphony of beat.
+Softly it whispers secrets,
+In each gentle patter's seat.",32,26,0.00002040,0.885,instruction,8,False,0
+13,bangla,বৃষ্টি নিয়ে একটি ছোট কবিতা লেখো।,"ভরসা বাজে হয়েছে,
+বৃষ্টি মনে পড়ে আমার।
+তাদের সুন্দর শব্দ একটু ভিড়ে যায়,
+একটা নতীজা হয় মনে পড়ে।
+
+মেঘের কথা বলে আসে তারা,
+বিছানায় শুয়ে থাকে সেই দিন।
+তাদের প্রেম একটা মজা হয়,
+একটা বাজির আসে মনে পড়ে।
+
+বৃষ্টি শব্দ করে যায় সেই রাত,
+তাদের হাত",61,256,0.00016275,6.446,instruction,37,True,0
+14,english,List three benefits of regular exercise.,"1. Improves heart health
+2. Boosts mood and reduces stress
+3. Enhances muscle strength and endurance",31,25,0.00001965,0.851,instruction,7,False,0
+14,bangla,নিয়মিত ব্যায়াম করার তিনটি উপকারিতা লেখো।,"1. শক্তি বৃদ্ধি: ব্যায়াম আপনার শক্তি ও প্রবর্তন বৃদ্ধিতে সহায়তা করে।
+   
+2. মনের স্থিরতা: ব্যায়াম আপনার মনের স্থিরতা ও সুস্থিতি প্রদান করে।
+
+3. শক্তির উন্নয়ন: ব্যায়াম আপনার শক্তির উন্নয়ন ও সুস্থিতির প্রদানে সহায়তা করে।",69,233,0.00015015,6.114,instruction,45,False,0
+15,english,Give me three tips for learning a new language.,"1. Practice regularly.
+2. Immerse yourself in the language (listen, watch, read).
+3. Use it often by speaking and writing.",34,32,0.00002430,0.959,instruction,10,False,0
+15,bangla,নতুন একটি ভাষা শেখার জন্য তিনটি পরামর্শ দাও।,"1. সময় থেকে ব্যবহার করুন: ভাষা শিখতে সময় লাগে, তাই আপনি এটি প্রতিদিন থামানো বা অবশিষ্ট করানো যাবেন না।
+
+2. সহযোগিতা ব্যবহার করুন: ভাষার শিখতে একজন প্রভাবশালার মাধ্যমে আপনি সহযোগিতা ব্যবহার করতে পারেন।
+
+3. অবদান দিন: ভাষার শিখতে একটি অবদান দিন থামান",69,256,0.00016395,7.72,instruction,45,True,0
+16,english,Write a polite email asking for a day off.,"Subject: Request for Day Off
+
+Dear [Manager's Name],
+
+I hope this message finds you well. I am writing to request a day off on [specific date]. I understand that this may cause some inconvenience, but it is essential for me to attend an important personal matter.
+
+Could we please arrange for someone else to cover my shifts? I will make sure to catch up with any necessary updates and tasks before and after my absence.
+
+Thank you very much for your understanding. I look forward to your positive response.
+
+Best regards,
+
+[Your Name]",34,111,0.00007170,3.947,instruction,10,False,0
+16,bangla,একদিনের ছুটি চেয়ে বিনয়ের সাথে একটি ইমেইল লেখো।,"Subject: Enjoying the Weekend with You
+
+Hi Vinay,
+
+I hope this email finds you well. I wanted to take a moment to express how much I enjoyed spending the weekend with you. The day was filled with laughter, great conversations, and some delicious food.
+
+Thank you for making it such a memorable time. Looking forward to more adventures together soon!
+
+Best regards,
+[Your Name]",76,80,0.00005940,2.248,instruction,52,False,0
+17,english,Name five fruits that grow in Bangladesh.,"1. Mango
+2. Banana
+3. Jackfruit
+4. Pineapple
+5. Guava",32,23,0.00001860,0.677,instruction,8,False,0
+17,bangla,বাংলাদেশে জন্মায় এমন পাঁচটি ফলের নাম বলো।,"1. কুকুরগোলা (Banana)
+2. গোলা (Banana)
+3. শিল্লক (Jackfruit)
+4. পেঞ্জামি (Mango)
+5. চৌকি (Papaya)",68,74,0.00005460,2.179,instruction,44,False,0
+18,english,"Translate the word ""book"" into French.","Book can be translated to French as ""livre"".",33,12,0.00001215,0.457,instruction,9,False,0
+18,bangla,"""বই"" শব্দটিকে ফরাসি ভাষায় অনুবাদ করো।","""Livre""",65,4,0.00001215,0.326,instruction,41,False,0
+19,english,Suggest a name for a small tea shop.,Whisper Tea,34,4,0.00000750,0.246,instruction,10,False,0
+19,bangla,একটি ছোট চায়ের দোকানের জন্য একটি নাম প্রস্তাব করো।,"""প্রিমিয়াম স্ট্যান্ডার্ড চায়ের""
+
+এই নামটি ছোট চায়ের দোকানের বৈদ্যুতিত্ব এবং স্পষ্টতা থেকে উৎপন্ন। ""Premium"" শব্দটি চায়ের গুণগ্রহণ ও প্রিমিয়াম কাজের বিষয়কতা স্থাপন করে। ""Standard"" শব্দটি ছোট চায়ের দোকানের সাধারণত অনুমোদিত বা স্থাপিত কাজগুলির উপর ভিত",79,256,0.00016545,6.751,instruction,55,True,0
+20,english,Write a two-line slogan to encourage people to plant trees.,"Plant Trees, Plant Hope for Tomorrow.",36,9,0.00001080,0.369,instruction,12,False,0
+20,bangla,মানুষকে গাছ লাগাতে উৎসাহিত করার জন্য দুই লাইনের একটি স্লোগান লেখো।,"Plant a Tree, Plant Hope
+
+Grow Trees, Grow Life",94,13,0.00002190,0.559,instruction,70,False,0
+21,english,Give an example of a healthy breakfast.,"Oatmeal with sliced bananas and a sprinkle of almonds, topped with a tablespoon of honey.",32,20,0.00001680,0.68,instruction,8,False,0
+21,bangla,একটি স্বাস্থ্যকর সকালের নাস্তার উদাহরণ দাও।,"সুপ (Protein-rich) - এটা শীতল এবং প্রশস্ত, যা আমাদের সকালের নাস্তার জন্য কিছুটা খাওয়া যায়।",67,88,0.00006285,2.407,instruction,43,False,0
+22,english,Write a greeting for a friend's birthday.,Happy Birthday! Enjoy every moment of this special day.,33,12,0.00001215,0.459,instruction,9,False,0
+22,bangla,বন্ধুর জন্মদিনের জন্য একটি শুভেচ্ছা বার্তা লেখো।,"আজ আমার বন্ধুর জন্মদিন, তোমার জীবনের প্রথম দিন হয়েছে! তোমার সাথে আমার কৃতজ্ঞতা অনশনীয়। এই জন্মদিনের প্রভাব তোমার জীবনে সবচেয়ে শক্তিশালী হওয়ার জন্য আসছে। তুমি এখন কিন্তু প্রথম মাসের বড় ছেলে, তাই তোমার শিখা ও অভিজ্ঞতা আমাদের কাছে একটি প",75,256,0.00016485,6.493,instruction,51,True,0
+23,english,Explain what photosynthesis is in two sentences.,"Photosynthesis is the process by which plants convert light energy into chemical energy stored in glucose, using sunlight, water, and carbon dioxide.",34,28,0.00002190,0.832,explanation,10,False,0
+23,bangla,দুই বাক্যে সালোকসংশ্লেষণ কী তা ব্যাখ্যা করো।,"সালোকসংশ্লেষণ (Satzglied) হল একটি বাক্যে সমস্ত অংশগুলিকে বিভক্ত করা হয়। এটি বাক্যে প্রতিটি শব্দ, শব্দ组合, বা সমস্ত অংশগুলিকে বিভক্ত করে এবং তাদের মধ্যে পরিচালনা নির্ধারণ করে।
+
+উদাহরণস্বরূপ: ""আমি শিখতে গিয়েছিলাম"" এই বাক্যটি দুই সালোকসংশ্লেষণে ভাগ হয়",73,256,0.00016455,6.547,explanation,49,True,0
+24,english,Briefly explain what the internet is.,"The internet is a global network of networks that allows the transmission of data between devices such as computers, smartphones, and other digital devices. It enables communication through various services like email, the web, social media, and more.",32,46,0.00003240,1.237,explanation,8,False,0
+24,bangla,ইন্টারনেট কী তা সংক্ষেপে ব্যাখ্যা করো।,ইন্টারনেট হল একটি ইলেকট্রনিক শিল্প যা অনেকগুলো বিভিন্ন সংস্করণের টেলিগ্রাম এবং ফোনের জটিল শাখার মধ্যে পরস্পর সঠিকভাবে সংযুক্ত হয়।,65,140,0.00009375,3.64,explanation,41,False,0
+25,english,Explain why we need to drink water every day.,"We need to drink water daily because our bodies are about 60% water and it's essential for numerous bodily functions, including digestion, temperature regulation, and nutrient transportation.",35,36,0.00002685,1.036,explanation,11,False,0
+25,bangla,প্রতিদিন আমাদের কেন পানি পান করা দরকার তা ব্যাখ্যা করো।,"পানি পান করা আমাদের জীবনে অনেক কিছু সহজতা হিসেবে উল্লেখযোগ্য। এটি মাথা পুড়িয়ে রাখা, শরীরের নিরামিষ করা এবং বৈদ্যুতিতে আমাদের জীবনের অনেক প্রয়োজনীয় কাজগুলি সহায়তা করে। এটি বিশ্বাস হয় যে, আমাদের মাথা পুড়িয়ে রাখা এবং শরীরের নির",80,256,0.00016560,6.551,explanation,56,True,0
+26,english,What is the difference between weather and climate?,"Weather refers to day-to-day variations of elements in the atmosphere in a specific location, while climate describes the long-term average conditions in an area.",33,30,0.00002295,0.904,explanation,9,False,0
+26,bangla,আবহাওয়া ও জলবায়ুর মধ্যে পার্থক্য কী?,আবহাওয়া এটি জলবায়ুর একটি উপাদান।,66,38,0.00003270,1.17,explanation,42,False,0
+27,english,Explain what a computer program is in simple words.,A computer program is a set of instructions that tells a computer what to do. It's like giving the computer step-by-step directions on how to complete a task or solve a problem.,35,38,0.00002805,1.101,explanation,11,False,0
+27,bangla,সহজ ভাষায় ব্যাখ্যা করো কম্পিউটার প্রোগ্রাম কী।,কম্পিউটার প্রোগ্রাম হল কম্পিউটারের জন্য একটি সুত্র। আপনি এই সুত্র থেকে কম্পিউটারকে কিভাবে কাজ করবে তা বলে।,75,110,0.00007725,2.918,explanation,51,False,0
+28,english,Explain how rain is formed.,"Rain forms when water vapor in the air condenses into liquid droplets, which then become heavy enough to fall as precipitation. This process primarily occurs through two main methods: evaporation and condensation.
+
+1. **Evaporation**: Water from oceans, lakes, rivers, and other bodies of water heats up by sunlight and turns into water vapor (steam) in the air.
+   
+2. **Condensation**: As this warm, moist air rises higher into cooler parts of the atmosphere, it cools down. When cooled, the water vapor changes back to liquid form, forming tiny droplets that stick together to create clouds.
+
+3. **Precipitation**: If these cloud droplets combine and grow large enough, they become too heavy for the air to hold them up, causing them to fall as rain. This process can also involve other forms of precipitation like snow or hail under different conditions.
+
+This cycle is part of Earth's water cycle, which continuously recycles water on our planet.",31,199,0.00012405,6.163,explanation,7,False,0
+28,bangla,বৃষ্টি কীভাবে হয় তা ব্যাখ্যা করো।,"বৃষ্টি হচ্ছে পৃথিবীর শত্রুগণ থেকে আমাদের নিজেদের সামনে এসে আমাদের কাউন্টির প্রশান্ত বাণী শোনায়। এটা হল গতিবিধি অপরাধ থেকে আমাদের কাউন্টির প্রশান্ত বাণী শোনায়।
+
+এটা সহজভাবে বললে, এটা হল জল মিলিং থেকে হয়। প্রথমে গতির কোনও অপরাধ নেই, তাই জল বাড",62,256,0.00016290,6.496,explanation,38,True,0
+29,english,Briefly describe what a database is.,"A database is an organized collection of data that is stored and managed by a DBMS (Database Management System) in a way that allows users to easily access, manage, and update the data.",32,40,0.00002880,1.126,explanation,8,False,0
+29,bangla,ডেটাবেস কী তা সংক্ষেপে বর্ণনা করো।,ডেটাবেস হল ডেটা এবং প্রতিটি ডেটা গুচ্ছের জন্য স্থানীয় মাস্টার।,61,68,0.00004995,1.835,explanation,37,False,0
+30,english,Explain why exercise is important for the heart.,"Exercise strengthens the heart by making it work more efficiently, reducing the heart's workload and lowering blood pressure. This helps prevent cardiovascular diseases and keeps the heart healthy.",34,33,0.00002490,0.988,explanation,10,False,0
+30,bangla,হৃদপিণ্ডের জন্য ব্যায়াম কেন গুরুত্বপূর্ণ তা ব্যাখ্যা করো।,হৃদপিণ্ড (চক্র) হল আমাদের সাইনাল প্রণালীর মূল বস্তু। গুরুত্বপুর্ণ ব্যায়াম হল এটি চক্রের স্থিতিকে পরিবর্তন করে আমাদের মানসিক ও শক্তি অবকাঠামো পরিবর্তন ঘটায়। এটি হৃদপিণ্ডের স্থায়ীতা ও চলমানতা মধ্যে অসম্পূর্ণতা বজায়ে দেয় আমাদের শক্তি এবং,88,256,0.00016680,6.905,explanation,64,True,0
+31,english,What is 15 plus 27?,42,34,3,0.00000690,0.232,arithmetic,10,False,0
+31,bangla,15 এর সাথে 27 যোগ করলে কত হয়?,"32 হয়।
+
+সমাধান: 15 + 27 = 42 -এই অপচয়টি আপনার প্যাটাকে ঠিক করতে দিতে চাইছি।",56,76,0.00005400,2.029,arithmetic,32,False,0
+32,english,What is 144 divided by 12?,12,36,3,0.00000720,0.245,arithmetic,12,False,0
+32,bangla,144 কে 12 দিয়ে ভাগ করলে কত হয়?,"12 হবে।
+
+144 ÷ 12 = 12",58,21,0.00002130,0.681,arithmetic,34,False,0
+33,english,What is 25 multiplied by 4?,100,34,4,0.00000750,0.255,arithmetic,10,False,0
+33,bangla,25 কে 4 দিয়ে গুণ করলে কত হয়?,25 কে 4 দিয়ে গুণ করলে 100 হবে।,57,34,0.00002895,1.008,arithmetic,33,False,0
+34,english,"If a pen costs 12 taka, how much do 7 pens cost?",84 taka.,42,6,0.00000990,0.329,arithmetic,18,False,0
+34,bangla,একটি কলমের দাম 12 টাকা হলে 7টি কলমের দাম কত?,"7টি কলমের দাম 84 টাকা থাকবে।
+
+(12 টাকা × 7 = 84 টাকা)",68,51,0.00004080,1.477,arithmetic,44,False,0
+35,english,What is 20 percent of 150?,30,36,3,0.00000720,0.242,arithmetic,12,False,0
+35,bangla,150 এর 20 শতাংশ কত?,30,43,3,0.00000825,0.232,arithmetic,19,False,0
+36,english,A train travels 60 kilometres in one hour. How far does it travel in 3 hours?,The train would travel 180 kilometers in 3 hours.,45,15,0.00001575,0.537,arithmetic,21,False,0
+36,bangla,একটি ট্রেন এক ঘণ্টায় 60 কিলোমিটার যায়। 3 ঘণ্টায় ট্রেনটি কত দূর যাবে?,"ট্রেন 1 ঘণ্টায় 60 কিলোমিটার যায়, তাহলে 3 ঘণ্টায় সে যাবে 180 কিলোমিটার।",100,79,0.00006240,2.222,arithmetic,76,False,0
+37,english,What is the square of 13?,169,33,4,0.00000735,0.277,arithmetic,9,False,0
+37,bangla,13 এর বর্গ কত?,13 এর বর্গ (13²) = 169,38,21,0.00001830,0.689,arithmetic,14,False,0
+38,english,Rahim has 50 taka and spends 18 taka. How much money is left?,Rahim has 32 taka left.,47,12,0.00001425,0.46,arithmetic,23,False,0
+38,bangla,রহিমের কাছে 50 টাকা আছে। সে 18 টাকা খরচ করলে তার কাছে কত টাকা থাকবে?,রহিমের কাছে 32 টাকা থ,92,23,0.00002760,1.749,arithmetic,68,False,4
+39,english,"Summarise this sentence in a few words: ""The library will be closed on Friday because of maintenance work, and it will reopen on Saturday morning.""","Library closed Fri for maintenance, reopens Sat morning.",55,12,0.00001545,0.491,summarise,31,False,0
+39,bangla,"এই বাক্যটি কয়েকটি শব্দে সংক্ষেপ করো: ""মেরামতের কাজের জন্য শুক্রবার লাইব্রেরি বন্ধ থাকবে এবং শনিবার সকালে আবার খুলবে।""","শুক্রবার মেরামতের জন্য লাইব্রেরি বন্ধ, শনিবার সকালে খুলবে।",147,61,0.00005865,1.883,summarise,123,False,0
+40,english,"Summarise in one short sentence: ""Regular sleep helps the body recover, improves memory, and keeps the mind calm during the day.""","Regular sleep enhances recovery, boosts memory, and calms the mind.",52,15,0.00001680,0.549,summarise,28,False,0
+40,bangla,"এক ছোট বাক্যে সংক্ষেপ করো: ""নিয়মিত ঘুম শরীরকে সেরে উঠতে সাহায্য করে, স্মৃতিশক্তি বাড়ায় এবং দিনের বেলায় মনকে শান্ত রাখে।""",घ,159,2,0.00002505,1.376,summarise,135,False,4
+41,english,"Summarise: ""The farmers planted rice in June, and after heavy rain in July, the fields were full of water, but the harvest in November was still good.""","In June, farmers planted rice. After heavy rains in July, the fields became flooded. Despite this, a good harvest occurred in November.",59,29,0.00002625,0.875,summarise,35,False,0
+41,bangla,"সংক্ষেপ করো: ""কৃষকেরা জুন মাসে ধান লাগিয়েছিলেন, জুলাই মাসে ভারী বৃষ্টির পর মাঠ পানিতে ভরে গিয়েছিল, তবুও নভেম্বর মাসে ফসল ভালো হয়েছিল।""","কৃষকরা জুন মাসে ধান লাগায়, জুলাই মাসে বৃষ্টি ভরে গিয়েছিল, তবে নভেম্বর মাসে ফসল ভালো হয়েছিল।",172,103,0.00008760,3.04,summarise,148,False,0
+42,english,"Give the main idea of this sentence: ""Public parks give city dwellers a place to rest, play, and meet their neighbours.""","Public parks provide spaces for relaxation, recreation, and socializing among neighbors.",51,16,0.00001725,0.632,summarise,27,False,0
+42,bangla,"এই বাক্যটির মূল ভাব বলো: ""পাবলিক পার্ক শহরের মানুষকে বিশ্রাম নেওয়ার, খেলার এবং প্রতিবেশীদের সাথে দেখা করার জায়গা দেয়।""","এটি বলছে যে, পাবলিক পার্ক শহরের মানুষকে বিশ্রাম নেওয়া, খেলার এবং প্রতিবেশীদের সাথে দেখা করার জন্য একটি উপযোগী অবস্থা হল।",152,128,0.00009960,3.677,summarise,128,False,0
+43,english,"Summarise in a few words: ""The new bus service connects the village to the town every hour, so students can reach school on time.""",New bus service ensures students' timely school commute.,54,11,0.00001470,0.453,summarise,30,False,0
+43,bangla,"কয়েকটি শব্দে সংক্ষেপ করো: ""নতুন বাস সার্ভিস প্রতি ঘণ্টায় গ্রাম ও শহরের মধ্যে চলাচল করে, তাই শিক্ষার্থীরা সময়মতো স্কুলে পৌঁছাতে পারে।""","নতুন বাস সার্ভিস, গ্রাম-শহর চলাচল, শিক্ষার্থী সময়মতো পৌঁছা।",170,67,0.00006570,2.137,summarise,146,False,0
+44,english,"Summarise: ""Mangoes ripen in summer, and families often share them with neighbours because the trees give more fruit than one house can eat.""","Mangoes ripen during summer, and families commonly share excess mangoes with neighbors since their trees produce more fruit than a single household needs.",56,30,0.00002640,0.987,summarise,32,False,0
+44,bangla,"সংক্ষেপ করো: ""আম গ্রীষ্মকালে পাকে এবং পরিবারগুলো প্রায়ই প্রতিবেশীদের সাথে তা ভাগ করে নেয়, কারণ গাছে একটি বাড়ির খাওয়ার চেয়ে বেশি ফল ধরে।""","আমি গ্রীষ্মকালে পাকে এবং পরিবারগুলো সামনে থাকা প্রতিবেশীদের সাথে ফসল ভাগ করে নেয়, কারণ গাছে একটি বাড়ির খাওয়ার চেয়ে বেশি ফল ধরে।",176,141,0.00011100,4.149,summarise,152,False,0
+45,english,"I am planning a small birthday party for my younger sister next week. She likes chocolate cake and loves drawing. Suggest a simple plan for the party, including food, one activity, and a decoration idea. Keep the suggestions cheap because our budget is small.","Sure! Here's a simple and cost-effective plan for your sister's birthday party:
+
+**Food:**
+- Chocolate cupcakes with chocolate frosting - You can make these using store-bought cake mixes and frosting.
+- Fruit salad - Fresh fruits like strawberries, grapes, and watermelon.
+
+**Activity:**
+- Drawing contest - Provide coloring books or blank sheets of paper. Set up a prize for the best drawing.
+
+**Decoration Idea:**
+- Use brown and white balloons to create a simple chocolate theme.
+- Hang streamers in your sister's room with ""Happy Birthday"" written on them.
+- Place small chocolate candies around as edible decorations.",76,129,0.00008880,3.531,long,52,False,0
+45,bangla,"আমি আগামী সপ্তাহে আমার ছোট বোনের জন্য একটি ঘরোয়া জন্মদিনের অনুষ্ঠানের পরিকল্পনা করছি। সে চকলেট কেক পছন্দ করে এবং ছবি আঁকতে ভালোবাসে। খাবার, একটি কার্যক্রম এবং একটি সাজসজ্জার ধারণাসহ অনুষ্ঠানের জন্য একটি সহজ পরিকল্পনা প্রস্তাব করো। আমাদের বাজেট কম, তাই পরামর্শগুলো কম খরচের হতে হবে।","পরিকল্পনা:
+
+1. **খাবার:**
+   - চকলেট কেক 2টি (সুইট ও স্ট্যান্ডার্ড)
+   - জোয়ার পিকচার
+   - বন্ধুত্ব চিঠি এবং মেলামেশা
+
+2. **কার্যক্রম:**
+   - ছবি আঁকানো পরিকল্পনা (স্টোর অফ ফ্ল্যাইট)
+   - সেপ্টিমেন বাজার থেকে ছবি আঁকানো উইজ ক্যাশমার্স
+
+3. **সাজসজ্জা:**
+   - একটি পরিচয় বাড়ি",320,256,0.00020160,7.533,long,296,True,0
+46,english,"My phone battery drains very quickly, even when I am not using it. I have already closed most of the apps and lowered the screen brightness. The phone is about two years old. What could be the reasons, and what should I check first?","First, you should check if there are any background processes or services that might be consuming a lot of battery. You can use your device's battery usage app to identify this. Additionally, ensure that your phone is not set to automatically update apps in the background, as this can also drain the battery quickly. Lastly, consider updating your Android version and apps to their latest versions, as updates often include performance improvements and bug fixes.",74,86,0.00006270,2.35,long,50,False,0
+46,bangla,"আমার ফোনের ব্যাটারির চার্জ খুব দ্রুত শেষ হয়ে যায়, এমনকি ফোনটি ব্যবহার না করলেও। আমি ইতিমধ্যে বেশিরভাগ অ্যাপ বন্ধ করেছি এবং স্ক্রিনের উজ্জ্বলতা কমিয়েছি। ফোনটি প্রায় দুই বছরের পুরোনো। এর কারণ কী হতে পারে, আর আমার প্রথমে কী পরীক্ষা করা উচিত?","ফোনের ব্যাটারি চার্জ শেষ হয়ে যাওয়া সমস্যার কারণগুলি প্রায়শই অনিশ্বর। এটি সবচেয়ে সাধারণভাবে বেস ওয়াইজ, ফ্লাইমিং, কোডিং বা অন্য পরিবর্তনশীল উপকরণের সাথে ফোনের সংযুক্তি হওয়ায় ঘটতে পারে।
+
+আমাদের প্রথম পদক্ষেপ হলো, আপনি ফোনের ব্যাটারি সংয",283,256,0.00019605,6.992,long,259,True,0
+47,english,"I want to start learning programming, but I have never written any code before. I can study for one hour every day after school. Which language should I start with, and how should I organise my first month? Give simple steps.","### Language to Start With:
+For beginners, Python is a great choice because it has clear syntax that closely resembles English, making it easier to understand.
+
+### Organisation for Your First Month:
+
+1. **Set Goals**: Define what you want to achieve in the next month (e.g., create your first program, learn basic data types).
+
+2. **Daily Schedule**:
+   - Day 1-7: Learn about variables and basic data types.
+     - Study Python basics like strings, integers, floats, booleans.
+     - Practice by writing simple programs that use these data types.
+
+   - Day 8-14: Understand control structures (if statements, loops).
+     - Write programs with conditional logic and loops to manipulate data.
+
+   - Day 15-21: Learn functions and modules.
+     - Create small functions and understand how to import and use external libraries.
+
+   - Day 22-28: Introduction to lists, tuples, dictionaries.
+     - Practice working with collections of data in Python.
+
+3. **Resources**:
+   - Use online tutorials from websites like Codecademy or freeCodeCamp.
+   - Watch video lessons on YouTube channels dedicated to beginners.
+   - Read books such as ""Python for Everybody"" by Charles Sever",71,256,0.00016425,6.576,long,47,True,0
+47,bangla,"আমি প্রোগ্রামিং শেখা শুরু করতে চাই, কিন্তু আগে কখনো কোনো কোড লিখিনি। স্কুলের পর আমি প্রতিদিন এক ঘণ্টা পড়ার সময় পাই। আমার কোন প্রোগ্রামিং ভাষা দিয়ে শুরু করা উচিত, আর প্রথম এক মাসের পড়াশোনা কীভাবে সাজাব? সহজ ধাপে বলো।","প্রথমেই, আপনি একটি প্রোগ্রামিং ভাষা নির্বাচন করতে পারেন। সবচেয়ে সহজভাবে, Python হল একটি অপশন।
+
+প্রথম মাসের পড়াশোনা কিভাবে সাজানো যায়:
+
+1. **Python শুরু করুন**: আপনি Python একটি অনলাইন প্রোগ্রামিং ট্যাবিউ থেকে শুরু করতে পারেন।
+
+2. **পড়াশোনা সিরিজ**: আপনি একটি পড়াশো",263,256,0.00019305,7.088,long,239,True,0
+48,english,"Our neighbourhood has a lot of plastic waste on the street after the weekly market. Many shopkeepers say they do not have time to clean it. Write a short message to the shopkeepers that asks them to help, in a friendly tone.",Hey shopkeepers! We could really use your help keeping our neighborhood tidy after the market. Every little bit helps make our streets more beautiful and safer for everyone. Let's work together to keep our community clean and enjoyable. Thanks for considering!,72,49,0.00004020,1.422,long,48,False,0
+48,bangla,"সাপ্তাহিক বাজারের পর আমাদের পাড়ার রাস্তায় অনেক প্লাস্টিক বর্জ্য পড়ে থাকে। অনেক দোকানদার বলেন, পরিষ্কার করার মতো সময় তাঁদের নেই। দোকানদারদের উদ্দেশে বন্ধুত্বপূর্ণ সুরে একটি ছোট বার্তা লেখো, যাতে তাঁদের সাহায্য করতে অনুরোধ করা হয়।","ভাই/বहन,
+
+আমি পাড়ার রাস্তায় বিভিন্ন প্লাস্টিক বর্জ্যের উপস্থিতি দেখেছি। এটি আমাদের রাস্তা ও মহলগুলোকে পরিষ্কার হতে বাধ্য করে।
+
+এই অসীম প্লাস্টিক বর্জ্যের উপস্থিতি দোকানদারদেরও আশা হচ্ছে এটি সময় ও প্রশস্ততার কথা। তবে আপনাদের সাহায্য করার জন্য অনুরো",272,256,0.00019440,6.944,long,248,True,0
+49,english,"A student scored 70 in mathematics, 85 in science, and 90 in English. The teacher says the average score decides the final grade. Calculate the average score of the student, and then say whether it is above 80. Show the steps briefly.","First, add up all scores: 70 + 85 + 90 = 245.
+
+Then divide by the number of subjects (3) to find the average: 245 / 3 = 81.67.
+
+The student's average score is approximately 81.67, which is above 80.",81,76,0.00005775,2.095,long,57,False,0
+49,bangla,"একজন শিক্ষার্থী গণিতে 70, বিজ্ঞানে 85 এবং ইংরেজিতে 90 পেয়েছে। শিক্ষক বলেছেন, গড় নম্বর দিয়ে চূড়ান্ত গ্রেড ঠিক হবে। শিক্ষার্থীর গড় নম্বর হিসাব করো, তারপর বলো গড়টি 80 এর বেশি কি না। ধাপগুলো সংক্ষেপে দেখাও।","সিখিতে যত্ত্ব:
+1. শিক্ষার্থীর মৌলিক অনু积 = 70 + 85 + 90 = 245
+2. গড় নম্বর = 245 / 3 = 81.67
+
+গড় নম্বর 80 থেকে কম।",248,112,0.00010440,3.327,long,224,False,0
+50,english,Many people say that reading books before sleep helps them relax. Others prefer to watch videos on their phones. Compare the two habits in a few sentences. Say which one is better for sleep and give one reason.,"Reading books can help calm the mind and reduce stress, potentially aiding sleep. Watching videos tends to stimulate the brain more, making it harder to fall asleep. Reading is generally considered better for sleep due to its calming effect.",66,45,0.00003690,1.32,long,42,False,0
+50,bangla,অনেকে বলেন ঘুমানোর আগে বই পড়লে মন শান্ত হয়। অন্যরা ফোনে ভিডিও দেখতে পছন্দ করেন। কয়েকটি বাক্যে এই দুটি অভ্যাসের তুলনা করো। ঘুমের জন্য কোনটি ভালো তা বলো এবং একটি কারণ দাও।,"ভালো অভ্যাস: ঘুমানোর আগে বই পড়া।
+
+কারন: মন শান্ত হয়, এটি চিকিটসের জন্য ভালো হয়।",210,89,0.00008490,2.7,long,186,False,0
