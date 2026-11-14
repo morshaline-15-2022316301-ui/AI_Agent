@@ -1,0 +1,180 @@
+[
+  {
+    "id": "q01",
+    "question": "How many customers are there?",
+    "type": "answer",
+    "expected": [
+      120
+    ],
+    "category": "simple",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q02",
+    "question": "How many products are in the Books category?",
+    "type": "answer",
+    "expected": [
+      6
+    ],
+    "category": "simple",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q03",
+    "question": "What is the average product price?",
+    "type": "answer",
+    "expected": [
+      69.24
+    ],
+    "category": "simple",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q04",
+    "question": "How many orders have the status 'cancelled'?",
+    "type": "answer",
+    "expected": [
+      63
+    ],
+    "category": "simple",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q05",
+    "question": "What is the total revenue for customer 12?",
+    "type": "answer",
+    "expected": [
+      1975.65
+    ],
+    "category": "join",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q06",
+    "question": "How many orders did customer 7 place?",
+    "type": "answer",
+    "expected": [
+      5
+    ],
+    "category": "join",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q07",
+    "question": "How many units (total quantity) of products in the Toys category were sold?",
+    "type": "answer",
+    "expected": [
+      589
+    ],
+    "category": "join",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q08",
+    "question": "Which product category earned the most revenue?",
+    "type": "answer",
+    "expected": [
+      "Clothing"
+    ],
+    "category": "grouping",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q09",
+    "question": "Which city has the most customers?",
+    "type": "answer",
+    "expected": [
+      "Dhaka"
+    ],
+    "category": "grouping",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q10",
+    "question": "What is the name of the most expensive product?",
+    "type": "answer",
+    "expected": [
+      "Power Bank"
+    ],
+    "category": "grouping",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q11",
+    "question": "What is the price difference between the most expensive and the cheapest product?",
+    "type": "answer",
+    "expected": [
+      133.02
+    ],
+    "category": "calculation",
+    "needs_multiple_tool_calls": true
+  },
+  {
+    "id": "q12",
+    "question": "What percent of all orders have the status 'cancelled'?",
+    "type": "answer",
+    "expected": [
+      15.75
+    ],
+    "category": "calculation",
+    "needs_multiple_tool_calls": true
+  },
+  {
+    "id": "q13",
+    "question": "What is the average order value, and what percent above the minimum order value is it? (order value = sum of quantity * unit_price of its items)",
+    "type": "answer",
+    "expected": [
+      532.97,
+      7006.21
+    ],
+    "category": "calculation",
+    "needs_multiple_tool_calls": true
+  },
+  {
+    "id": "q14",
+    "question": "What is the total revenue of the Electronics category, and what percent of the overall revenue is that?",
+    "type": "answer",
+    "expected": [
+      46081.42,
+      21.62
+    ],
+    "category": "calculation",
+    "needs_multiple_tool_calls": true
+  },
+  {
+    "id": "q15",
+    "question": "By what percent did total revenue grow from 2024 to 2025? (use the order year)",
+    "type": "answer",
+    "expected": [
+      6.92
+    ],
+    "category": "calculation",
+    "needs_multiple_tool_calls": true
+  },
+  {
+    "id": "q16",
+    "question": "How many different customers have placed at least one order?",
+    "type": "answer",
+    "expected": [
+      116
+    ],
+    "category": "join",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q17",
+    "question": "What is the average age of our customers?",
+    "type": "refuse",
+    "expected": [],
+    "category": "cannot_answer",
+    "needs_multiple_tool_calls": false
+  },
+  {
+    "id": "q18",
+    "question": "What was our total profit margin last year?",
+    "type": "refuse",
+    "expected": [],
+    "category": "cannot_answer",
+    "needs_multiple_tool_calls": false
+  }
+]

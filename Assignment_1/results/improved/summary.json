@@ -1,0 +1,207 @@
+{
+  "model": "hf.co/Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+  "variant": "improved",
+  "trials": 3,
+  "questions": 18,
+  "trials_per_question": 3,
+  "pass_at_1": 0.7037037037037037,
+  "pass_pow_k": 0.5,
+  "pass_at_k_any": 0.8333333333333334,
+  "per_question": {
+    "q01": {
+      "question": "How many customers are there?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q02": {
+      "question": "How many products are in the Books category?",
+      "category": "simple",
+      "passes": 1,
+      "trials": 3
+    },
+    "q03": {
+      "question": "What is the average product price?",
+      "category": "simple",
+      "passes": 2,
+      "trials": 3
+    },
+    "q04": {
+      "question": "How many orders have the status 'cancelled'?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q05": {
+      "question": "What is the total revenue for customer 12?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q06": {
+      "question": "How many orders did customer 7 place?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q07": {
+      "question": "How many units (total quantity) of products in the Toys category were sold?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q08": {
+      "question": "Which product category earned the most revenue?",
+      "category": "grouping",
+      "passes": 2,
+      "trials": 3
+    },
+    "q09": {
+      "question": "Which city has the most customers?",
+      "category": "grouping",
+      "passes": 2,
+      "trials": 3
+    },
+    "q10": {
+      "question": "What is the name of the most expensive product?",
+      "category": "grouping",
+      "passes": 0,
+      "trials": 3
+    },
+    "q11": {
+      "question": "What is the price difference between the most expensive and the cheapest product?",
+      "category": "calculation",
+      "passes": 3,
+      "trials": 3
+    },
+    "q12": {
+      "question": "What percent of all orders have the status 'cancelled'?",
+      "category": "calculation",
+      "passes": 2,
+      "trials": 3
+    },
+    "q13": {
+      "question": "What is the average order value, and what percent above the minimum order value is it? (order value = sum of quantity * unit_price of its items)",
+      "category": "calculation",
+      "passes": 0,
+      "trials": 3
+    },
+    "q14": {
+      "question": "What is the total revenue of the Electronics category, and what percent of the overall revenue is that?",
+      "category": "calculation",
+      "passes": 0,
+      "trials": 3
+    },
+    "q15": {
+      "question": "By what percent did total revenue grow from 2024 to 2025? (use the order year)",
+      "category": "calculation",
+      "passes": 3,
+      "trials": 3
+    },
+    "q16": {
+      "question": "How many different customers have placed at least one order?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q17": {
+      "question": "What is the average age of our customers?",
+      "category": "cannot_answer",
+      "passes": 3,
+      "trials": 3
+    },
+    "q18": {
+      "question": "What was our total profit margin last year?",
+      "category": "cannot_answer",
+      "passes": 2,
+      "trials": 3
+    }
+  },
+  "per_category_pass_rate": {
+    "simple": 0.75,
+    "join": 1.0,
+    "grouping": 0.4444444444444444,
+    "calculation": 0.5333333333333333,
+    "cannot_answer": 0.8333333333333334
+  },
+  "failure_types": {
+    "wrong_refusal": 9,
+    "wrong_sql_logic": 2,
+    "sql_error_then_wrong": 2,
+    "step_cap": 2,
+    "no_tool_use": 1
+  },
+  "failure_examples": {
+    "wrong_refusal": {
+      "question": "How many products are in the Books category?",
+      "final_answer": "The Books category does not exist in the database.",
+      "sql_written": [
+        "SELECT COUNT(p.id) FROM products p JOIN categories cg ON p.category_id = cg.id WHERE cg.name = 'Books'",
+        "SELECT COUNT(p.id) FROM products p JOIN categories ca ON p.category_id = ca.id WHERE ca.name = 'Books'"
+      ],
+      "status": "ok",
+      "expected": [
+        6
+      ]
+    },
+    "wrong_sql_logic": {
+      "question": "What percent of all orders have the status 'cancelled'?",
+      "final_answer": "15% of all orders have the status 'cancelled'",
+      "sql_written": [
+        "SELECT SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) * 100 / COUNT(*) FROM orders"
+      ],
+      "status": "ok",
+      "expected": [
+        15.75
+      ]
+    },
+    "sql_error_then_wrong": {
+      "question": "What is the average order value, and what percent above the minimum order value is it? (order value = sum of quantity * unit_price of its items)",
+      "final_answer": "The average order value is approximately $213.40 and it is about 2745% above the minimum order value.",
+      "sql_written": [
+        "SELECT AVG(total_value/order_id.quantity), AVG(total_value)/MIN(total_value) FROM (SELECT o.id AS order_id, SUM(oi.quantity*oi.unit_price) AS total_value FROM orders o JOIN order_items oi ON oi.order_id = o.id GROUP BY o.id)",
+        "SELECT AVG(oi.quantity * oi.unit_price) AS avg_order_value, \nCASE WHEN MAX(oi.quantity * oi.unit_price) IS NOT NULL THEN ((AVG(oi.quantity * oi.unit_price) - MIN(oi.quantity * oi.unit_price)) / MIN(oi.quantity * oi.unit_price)) * 100 ELSE 0 END AS percent_above_min FROM orders o JOIN order_items oi ON oi.order_id = o.id"
+      ],
+      "status": "ok",
+      "expected": [
+        532.97,
+        7006.21
+      ]
+    },
+    "step_cap": {
+      "question": "What is the average order value, and what percent above the minimum order value is it? (order value = sum of quantity * unit_price of its items)",
+      "final_answer": null,
+      "sql_written": [
+        "SELECT AVG(total_value/order_id.quantity), AVG(total_value)/MIN(total_value) FROM (SELECT o.id AS order_id, SUM(oi.quantity*oi.unit_price) AS total_value FROM orders o JOIN order_items oi ON oi.order_id = o.id GROUP BY o.id)",
+        "SELECT AVG(total_value/order_items.quantity) AS avg_order_value, \nCASE WHEN MAX(total_value)/MIN(total_value)>1 THEN ((MAX(total_value)-MIN(total_value))/MIN(total_value))*100 ELSE 0 END AS pct_above_min FROM (SELECT o.id, SUM(oi.quantity*oi.unit_price) as total_value FROM orders o JOIN order_items oi ON oi.order_id = o.id GROUP BY o.id)",
+        "SELECT AVG(total_value/order_id.quantity) AS avg_order_value, \nCASE WHEN AVG(total_value/order_id.quantity) > MIN(order_value) THEN ((AVG(total_value/order_id.quantity) - MIN(order_value)) / MIN(order_value)) * 100 ELSE 0 END AS percent_above_min FROM (SELECT o.id AS order_id, SUM(oi.quantity * oi.unit_price) AS total_value FROM orders o JOIN order_items oi ON oi.order_id = o.id GROUP BY o.id)",
+        "SELECT AVG(total_value/order_id.quantity) AS avg_order_value, \nCASE WHEN AVG(total_value/order_id.quantity) > MIN(total_value/order_id.quantity) THEN ((AVG(total_value/order_id.quantity)-MIN(total_value/order_id.quantity))/MIN(total_value/order_id.quantity))*100 ELSE 0 END AS percent_above_min\nFROM (SELECT o.id AS order_id, SUM(oi.quantity*oi.unit_price) AS total_value FROM orders o JOIN order_items oi ON oi.order_id = o.id GROUP BY o.id)"
+      ],
+      "status": "step_cap",
+      "expected": [
+        532.97,
+        7006.21
+      ]
+    },
+    "no_tool_use": {
+      "question": "What is the total revenue of the Electronics category, and what percent of the overall revenue is that?",
+      "final_answer": "The total revenue of the Electronics category is [calculated value] and it constitutes [percentage value]% of the overall revenue.",
+      "sql_written": [
+        "SELECT SUM(p.price * oi.quantity) AS electronics_revenue, (SUM(p.price * oi.quantity) * 100 / SUM(o.products.sum_quantity * o.products.unit_price)) AS percentage FROM orders o JOIN order_items oi ON oi.order_id = o.id JOIN products p ON p.id = oi.product_id WHERE p.category = 'Electronics' GROUP BY electronics_revenue",
+        "SELECT SUM(p.price * oi.quantity) AS electronics_revenue, (SUM(p.price * oi.quantity) * 100 / SUM(o.quantity * o.unit_price)) AS electronics_percent FROM orders o JOIN order_items oi ON oi.order_id = o.id JOIN products p ON p.id = oi.product_id WHERE p.category = 'Electronics'",
+        "SELECT SUM(p.price * oi.quantity) AS electronics_revenue, (SUM(p.price * oi.quantity) * 100 / SUM(o.products.sum_revenue)) AS percentage FROM orders o JOIN order_items oi ON oi.order_id = o.id JOIN products p ON p.id = oi.product_id WHERE p.category = 'Electronics' GROUP BY p.category"
+      ],
+      "status": "ok",
+      "expected": [
+        46081.42,
+        21.62
+      ]
+    }
+  },
+  "tokens_mean_per_run": 2971.462962962963,
+  "time_mean_per_run_s": 8.543703703703704,
+  "status_counts": {
+    "ok": 52,
+    "step_cap": 2
+  }
+}

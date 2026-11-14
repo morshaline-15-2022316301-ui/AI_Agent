@@ -1,0 +1,181 @@
+{
+  "model": "hf.co/Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+  "variant": "baseline",
+  "trials": 3,
+  "questions": 18,
+  "trials_per_question": 3,
+  "pass_at_1": 0.7407407407407407,
+  "pass_pow_k": 0.5555555555555556,
+  "pass_at_k_any": 0.8888888888888888,
+  "per_question": {
+    "q01": {
+      "question": "How many customers are there?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q02": {
+      "question": "How many products are in the Books category?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q03": {
+      "question": "What is the average product price?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q04": {
+      "question": "How many orders have the status 'cancelled'?",
+      "category": "simple",
+      "passes": 3,
+      "trials": 3
+    },
+    "q05": {
+      "question": "What is the total revenue for customer 12?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q06": {
+      "question": "How many orders did customer 7 place?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q07": {
+      "question": "How many units (total quantity) of products in the Toys category were sold?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q08": {
+      "question": "Which product category earned the most revenue?",
+      "category": "grouping",
+      "passes": 2,
+      "trials": 3
+    },
+    "q09": {
+      "question": "Which city has the most customers?",
+      "category": "grouping",
+      "passes": 1,
+      "trials": 3
+    },
+    "q10": {
+      "question": "What is the name of the most expensive product?",
+      "category": "grouping",
+      "passes": 3,
+      "trials": 3
+    },
+    "q11": {
+      "question": "What is the price difference between the most expensive and the cheapest product?",
+      "category": "calculation",
+      "passes": 3,
+      "trials": 3
+    },
+    "q12": {
+      "question": "What percent of all orders have the status 'cancelled'?",
+      "category": "calculation",
+      "passes": 0,
+      "trials": 3
+    },
+    "q13": {
+      "question": "What is the average order value, and what percent above the minimum order value is it? (order value = sum of quantity * unit_price of its items)",
+      "category": "calculation",
+      "passes": 2,
+      "trials": 3
+    },
+    "q14": {
+      "question": "What is the total revenue of the Electronics category, and what percent of the overall revenue is that?",
+      "category": "calculation",
+      "passes": 0,
+      "trials": 3
+    },
+    "q15": {
+      "question": "By what percent did total revenue grow from 2024 to 2025? (use the order year)",
+      "category": "calculation",
+      "passes": 1,
+      "trials": 3
+    },
+    "q16": {
+      "question": "How many different customers have placed at least one order?",
+      "category": "join",
+      "passes": 3,
+      "trials": 3
+    },
+    "q17": {
+      "question": "What is the average age of our customers?",
+      "category": "cannot_answer",
+      "passes": 2,
+      "trials": 3
+    },
+    "q18": {
+      "question": "What was our total profit margin last year?",
+      "category": "cannot_answer",
+      "passes": 2,
+      "trials": 3
+    }
+  },
+  "per_category_pass_rate": {
+    "simple": 1.0,
+    "join": 1.0,
+    "grouping": 0.6666666666666666,
+    "calculation": 0.4,
+    "cannot_answer": 0.6666666666666666
+  },
+  "failure_types": {
+    "wrong_refusal": 5,
+    "wrong_sql_logic": 5,
+    "sql_error_then_wrong": 2,
+    "hallucinated_answer": 2
+  },
+  "failure_examples": {
+    "sql_error_then_wrong": {
+      "question": "Which product category earned the most revenue?",
+      "final_answer": "The Electronics category earned the most revenue with a total of $46,081.42.",
+      "sql_written": [
+        "SELECT p.category, SUM(p.price * oi.quantity) AS Total_Revenue FROM products p JOIN order_items oi ON p.id = oi.product_id GROUP BY p.category"
+      ],
+      "status": "ok",
+      "expected": [
+        "Clothing"
+      ]
+    },
+    "wrong_refusal": {
+      "question": "Which city has the most customers?",
+      "final_answer": "address_city column is missing from the customers table",
+      "sql_written": [],
+      "status": "ok",
+      "expected": [
+        "Dhaka"
+      ]
+    },
+    "wrong_sql_logic": {
+      "question": "What percent of all orders have the status 'cancelled'?",
+      "final_answer": "About 18.69% of all orders have the status 'cancelled'.",
+      "sql_written": [
+        "SELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM orders WHERE status = 'completed' OR status = 'pending') FROM orders WHERE status = 'cancelled'"
+      ],
+      "status": "ok",
+      "expected": [
+        15.75
+      ]
+    },
+    "hallucinated_answer": {
+      "question": "What is the average age of our customers?",
+      "final_answer": "The average age of our customers is approximately 45279 years.",
+      "sql_written": [
+        "SELECT AVG(EXTRACT(YEAR FROM AGE(signup_date))) AS avg_age FROM customers",
+        "SELECT AVG(julianday(signup_date) - julianday('1900-01-01')) AS avg_age FROM customers"
+      ],
+      "status": "ok",
+      "expected": []
+    }
+  },
+  "tokens_mean_per_run": 2538.3888888888887,
+  "time_mean_per_run_s": 7.607037037037037,
+  "status_counts": {
+    "ok": 54
+  }
+}
